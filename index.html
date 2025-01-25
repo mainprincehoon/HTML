@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="prince kumar">
+
+    <title>practice html file</title>
+    <meta name="description" content="ye meri pehli html file hai ye webpage me nahi aayegi">
+    <link rel="icon" href="IMG_20240312_025236.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+<!-- ye comment hai isme likha bas mujhe dikhega or kahi nahi-->
+
+    
+<header>
+<h1> ye H1 heading hai</h1>
+</header>
+
+<!-- space dene ke liye &nbsp; -->
+<main>
+<p> ye 1 paragraph &nbsp; &nbsp; &nbsp; tag hai </p>
+<p> next line me aayega cuz it is a block level element</p>
+
+
+but bina para tag lagaaye 
+bhale hi mai next line me likhu same line me hi aayega
+
+<p>lekin</p>
+
+agar mai break tag ka use karu <br> to ab ye next line me jaayega similar to endl in c++ <br><br>
+
+
+
+<!-- bullet points-->
+<ui type="square">
+    <li> ui se bullet points(unordered list) likh sakte hai</li>
+    <li> jitne li utne bullet points</li>
+
+    <ol>
+        <li> aise karke bhi kar sakte hai nested numbering</li>
+        <li> same same nested bhi kar sate hai or ui and ol me interchange bhi kar sakte hai</li>
+    </ol>
+    <li> hello mic test</li>
+
+</ui>
+
+
+<!-- numbering waale points-->
+<ol type="1" start="10" reversed="true">
+    <li> ol se numbering(ordered list) kar sakte hai</li>
+    <li> jitne li utne numbering</li>
+
+    <ol>
+        <li> nested numbering vo kar sakte hai</li>
+        <li> aise karke</li>                             <!-- nested numbering-->
+    </ol>
+    <li> hello hello mic test</li>
+</ol>
+
+
+<!--id -id attribute is used to uniquely identify element (ye sirf 1 element ko assign kar sakte hai)-->
+<!-- class - class attribute is used to identify a group of elements (ye multiple elements ko assign kar sakte hai and 1 element ko multiple class bhi assign kar sakte hai)-->
+<ui type="square" id="unik">
+    <li class="thisunik c2unik"> ui se bullet points(unordered list) likh sakte hai</li>
+    <li class="thisunik"> jitne li utne bullet points</li>
+</ui>
+
+<!-- discription list(dl) discription term(dt) discription details(dd)-->
+ <dl>
+    <dt> north pole</dt>
+    <dd>this is a <strong>cold</strong> place.</dd>
+
+    <dt>South pole</dt>
+    <dd>i hear this is also cold</dd>
+
+    <dt>mountain tops</dt>
+    <dd>this is also very very cold</dd>
+ </dl>
+
+</main>
+
+<details>
+<summary>
+  kaise ho aap log
+</summary>
+<p>
+  jaa na lawde
+</p>
+</details>
+
+<!-- styling in html-->
+ <br>
+ <h1 style="color: red;"> HEaDING HAI </h1>
+
+
+ <!-- link de sake hai using inchar tag(a)(used to implement hyperlinks)-->
+ <a href="https://www.youtube.com"> Go to YouTube in the same tab</a> 
+ <br>
+ <a href="https://www.youtube.com" target="-_blank"> Go to YouTube in a new tab</a> 
+  <br>
+ <a href="linking.html"> new site</a>
+ <br>
+ <a href="tables 2.html"> tables</a>
+ 
+
+
+ <!-- some important tags-->
+  <div>
+
+    <b> bold kar deta hai</b>   <!-- we can also use <strong> tag instead of <b> since strong is a semantic tag and b is a non cimentic tag-->
+    <br>
+    <i> italics kar deta (tedha)</i>    <!-- cite bhi same kaam karega-->
+    <br>
+    <mark> highlight kar dega</mark>
+    <br>
+    <ins> underline kar dega</ins>   <!-- u se bhi ho jaayega-->
+    <br>
+    <del> kaat dega (strike through)</del>
+    <br>
+    <abbr> dotted underline hota hai issey</abbr>
+    <br>
+    E= MC <sup>2</sup> <!-- power me laga dega sup-->
+    <br>
+    H <sub>2</sub> O <!-- niche laga dega sub-->
+
+  </div>
+
+ 
+  <!--input tags-->
+  <input type="text"> <br>
+  <input type="password"> <br>
+  <input type="email" name="ye email hai"> <br>   <!-- name webpage par show nahi karega lekin 
+                                                    pata kaise chalega agar bohot saare daabe ho gaye server ko ki konsa data 
+                                                    kiska hai to waha name kaam aata hai email ke saath name bhi jaayega jo uniquely
+                                                     identify karne me help karega-->
+  <input type="submit">
+
+
+  <!--image incertion and alt is used for semantic explanation and video insertion-->
+  <figure>
+  <img src="https://tse4.mm.bing.net/th?id=OIP.xTvs9-l72nM278d9JI7bmAHaKb&pid=Api&P=0&h=180" loading="eager" alt="attack on titan">
+  <figcaption>
+    Attack on titan
+  </figcaption>
+     <!--or-->
+  <img src="aot.jpeg" loading="=lazy"> <br>
+  <figcaption>
+    AOT
+  </figcaption>
+</figure>
+
+  <video width="500" height="500" src="fone.mp4" controls></video>
+          <!--or to hide video source--> 
+  <video width="500" height="500" controls muted autoplay >    <!-- control options vi daal sakte hai-->
+    <source src="fone.mp4">
+  </video>
+
+
+  <!-- audio vi daal sakte hai-->
+  <audio src="kratos.mp3"></audio>
+  
+  <!--some special characters-->
+  &lt; <!--left arrow-->
+  &gt; <!--right arrow-->
+  &copy;
+  &reg;
+  &amp; <!--for &-->
+
+
+  <!--iske andar koi bhi code daal sakte hai-->
+  <code>
+    #include <stdio.h>
+        int main(){
+        
+        int a,b;
+        printf("enter the number till you want the AP: ");
+        scanf("%d",&a);
+        printf("enter the common difference : ");
+        scanf("%d",&b);
+        printf("Your AP is : ");
+        while(a>0){
+            printf("%d", a);
+            a=a-b;
+            printf(",");
+        }
+        
+        return 0;
+        }
+  </code>
+
+
+  <!-- iske andar jitna bhi space apan ne occupy kar rakha hai actual me sab show karega-->
+  <pre>
+    |
+    |
+    |
+    |
+  </pre>
+
+  <div>
+    |
+    |        <!-- without pre ye |||| aisa dikhega website parr-->
+    |
+    |
+  </div>
+
+
+</body>
+</html>
